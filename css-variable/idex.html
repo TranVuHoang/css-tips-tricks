@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message CSS</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="message-wrapper">
+      <!-- message error -->
+      <div class="message message--error">
+        <div class="error-icon">
+          <i class="fa fa-wifi"> </i>
+          <span>Error</span>
+        </div>
+        <div class="error-content">
+          <h2 class="error-title">No available connection</h2>
+          <p class="error-notice">Connection could not be establish</p>
+          <p class="error-reconnect">Reconnecting in 15s</p>
+        </div>
+        <i class="fa fa-times error-close"></i>
+      </div>
+
+      <!-- message success -->
+      <div class="message message--success">
+        <div class="error-icon">
+          <i class="fa fa-wifi"> </i>
+          <span>Success</span>
+        </div>
+        <div class="error-content">
+          <h2 class="error-title">Connection Found</h2>
+          <p class="error-notice">You have successfully reconnected</p>
+        </div>
+        <i class="fa fa-times error-close"></i>
+      </div>
+    </div>
+  </body>
+</html>

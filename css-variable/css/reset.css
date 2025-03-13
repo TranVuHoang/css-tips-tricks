@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --text-color: blue;
+}
+.message {
+  width: 50rem;
+  background: #000;
+  border-radius: 4px;
+}

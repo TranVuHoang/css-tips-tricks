@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: blue;
+  --error-color: #ed2568;
+}
+.message-wrapper {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.message {
+  position: relative;
+  width: 40rem;
+  min-height: 100px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  box-shadow: 0px 0px 7px #bcb8b8;
+  border-top: 4px solid var(--error-color);
+}
+
+.error-icon {
+  color: #fff;
+  padding: 1.8rem;
+  min-width: 116px;
+  background: var(--error-color);
+  border-radius: 5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-left: -4rem;
+  gap: 2rem;
+  box-shadow: 0 0 5px var(--error-color);
+}
+
+.error-title {
+  text-transform: uppercase;
+  color: var(--error-color);
+  font-size: 1.6rem;
+}
+
+.error-notice {
+  color: #a8a7a7;
+}
+
+.error-reconnect {
+  font-weight: bold;
+  color: #1a1c28;
+}
+
+.error-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--error-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  :root {
+    --error-color: orange;
+  }
+}
